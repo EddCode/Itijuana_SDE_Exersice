@@ -1,0 +1,12 @@
+{
+  "name": "Itijuana_SDE_Exersice",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start":"node src/index.mjs"
+  },
+  "repository": "git@github.com:EddCode/Itijuana_SDE_Exersice.git",
+  "author": "Edgar Figueroa <edgar.figueroa.gtz@gmail.com>",
+  "license": "MIT"
+}

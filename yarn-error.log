@@ -1,0 +1,45 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/19.7.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js start
+
+PATH: 
+  /Users/edgar/.docker/bin:/Users/edgar/.docker/bin:/usr/local/opt/imagemagick@6/bin:/opt/homebrew/bin:/opt/homebrew/opt/fzf/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  19.7.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  TypeError: Cannot use 'in' operator to search for 'start' in node index.msj
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:61538:34
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:5305:28)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:307:12
+      at realRunCommand (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:61630:23)
+      at action.action (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:61691:16)
+      at callThroughHook (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:65530:12)
+
+npm manifest: 
+  {
+    "name": "Itijuana_SDE_Exersice",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "index.mjs",
+    "scripts": "node index.msj",
+    "repository": "git@github.com:EddCode/Itijuana_SDE_Exersice.git",
+    "author": "Edgar Figueroa <edgar.figueroa.gtz@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
