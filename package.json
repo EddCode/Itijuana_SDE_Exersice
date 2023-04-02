@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.mjs",
   "scripts": {
-    "start":"node src/index.mjs"
+    "start":"node --experimental-modules src/index.mjs"
   },
   "repository": "git@github.com:EddCode/Itijuana_SDE_Exersice.git",
   "author": "Edgar Figueroa <edgar.figueroa.gtz@gmail.com>",

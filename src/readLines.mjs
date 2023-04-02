@@ -5,7 +5,7 @@ const readLineFiles = file => {
   try {
     const readInterface = readline.createInterface({
       input: fs.createReadStream(file),
-      console: true
+      console: false
     })
     return readInterface
   } catch (error) {

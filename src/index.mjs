@@ -1,5 +1,10 @@
 import calculateScore from "./calculateScore.mjs"
+import readArgs  from './readArgs.mjs'
 
-const [streetsFile, driversFile] = process.argv.slice(2)
+const run = async () => {
+  const { streetsFile, driversFile } = readArgs()
+  const assignments = await calculateScore({ streetsFile, driversFile })
+  console.log(assignments)
+}
 
-calculateScore({ streetsFile, driversFile })
+run()

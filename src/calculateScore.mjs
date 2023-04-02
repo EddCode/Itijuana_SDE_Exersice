@@ -24,7 +24,8 @@ const assignShipmentsToDrivers = async ({ streetsFile, driversFile } = {}) => {
   const streets = await fileContentToList(streetsFile)
   const drivers  = await fileContentToList(driversFile)
 
-  const assignments = {};
+  let totalScore = 0
+  const assignments = {}
 
   streets.forEach( (street) => {
     let bestDriver = null
@@ -39,12 +40,13 @@ const assignShipmentsToDrivers = async ({ streetsFile, driversFile } = {}) => {
       }
     })
 
-    bestDriver && (
+    if (bestDriver) {
       assignments[bestDriver] = { street, score: bestScore}
-    )
+      totalScore += bestScore
+    }
   })
 
-  console.log(assignments)
+  return { totalScore, assignments }
 }
 
 const countVowels = str => str.match(/[aeiou]/g)?.length || 0
